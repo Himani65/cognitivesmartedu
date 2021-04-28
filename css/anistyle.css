@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+.banner{
+    position: relative;
+    width:100%;
+    height:100vh;
+    background:#12222d ;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    opacity: 0.25;
+}
+.banner .content{
+    position: relative;
+    max-width: 750px;
+    text-align: center;
+}
+.banner .content h2{
+    color:#fff;
+    font-size: 60px;
+}
+.banner .content p1{
+    color:#fff;
+    font-size: 18px;
+}
+
+.about{
+    position: relative;
+    width: 100%;
+    display: flex;
+    background:#162c3b; 
+    min-height: 80vh;
+}
+
+.about .contentBx{
+    background: #162c3b;
+    padding: 100px;
+    width: 50%;
+}
+
+.heading{
+    color:#fff;
+    font-size:30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.text{
+    color:#fff;
+    font-size:16px;   
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.about .imgBx{
+    background: url(images/test_6.jpg);
+    width:50%;
+    background-size:cover;
+    background-position: center;
+}
+
+.services{
+    background:#12222d;
+    padding: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+.services .team_container{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    
+}
+/*
+.services .container .serviceBx
+{
+    position:relative;
+    background: #fff;
+    width:350px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:1;
+}
+*/
+/*
+.services .container .serviceBx img{
+    max-width: 100px;
+}
+*/
+/*
+.services .container .serviceBx h2{
+    font-weight: 500;
+    font-size:20px;
+    letter-spacing: 1px;
+}
+*/
+
+.technology{
+     background:#12222d ;
+    width:100%;
+    padding: 100px;
+    padding-top: 300px;
+/*    margin-top: -300px;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.5;
+}
+
+.technology .contentBx{
+     max-width: 800px;
+}
+
+.technology .imgBx{
+    max-width: 250px;
+}
+
+.technology .imgBx img{
+    max-width: 100%;
+}
+
+.post-wrap {
+   width: 200px;
+   height: 420px;
+   perspective: 1000px;
+}
+.post {
+   position: relative; /* Required to absolutely position the child faces */
+   width: 100%;
+   height: 100%;
+}
+
+.post-front, .post-back {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: white;
+}
+
+.post-back {
+   transform: rotateY(180deg);
+}
+
+.post-wrap:hover .post {
+   transform: rotateY(180deg);
+}
+
+.post-front, .post-back {
+   /* Existing styles here */
+   border-radius: 10px;
+   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.post-img {
+   background-size: cover;
+   background-position: center;
+   height: 300px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+}
+.post-info {
+   padding: 20px 30px 30px;
+}
+.post-info span {
+   font-size: 0.8rem;
+   color: #808080;
+}
+.post-info h2{
+   font-weight: bold;
+   font-size: 1.2rem;
+   padding-top: 5px;
+}
+
+.post-back {
+   background-color: #ffffff;
+   padding: 30px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between; /* To push the read more button to bottom */
+   align-items: flex-start; /* To position the read more button at the left */
+}
+.post-back h2{
+   font-weight: bold;
+   font-size: 1.2rem;
+   padding-top: 5px;
+}
+.post-back p {
+   margin-top: 10px;
+   line-height: 1.6;
+}
+.post-back a{
+   text-decoration: none;
+   color: #ffffff;
+   background-color: #5678ba;
+   padding: 10px 14px;
+   text-transform: uppercase;
+   letter-spacing: 0.05em;
+   font-size: 0.8em;
+   font-weight: bold;
+   border-radius: 5px;
+}
+
+
+.post {
+   /* Existing styles here */
+   transition: transform 1s;
+   transform-style: preserve-3d;   
+}
+
+.post-front, .post-back {
+   /* Existing styles here */
+   -webkit-backface-visibility: hidden;
+   backface-visibility: hidden;
+}
+
+.team_container {
+   max-width: 100%;
+   margin: auto;
+   padding: 60px;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap; /* Required to position the posts one below the other on smaller devices */
+}
+
+.post-wrap{
+   flex: 1;
+   margin: 0 15px 30px;
+
+}
+
+.post-wrap {
+   /* Existing styles here */
+     min-width: 200px;
+   max-width: 380px;
+}
+
+
+
+
+
